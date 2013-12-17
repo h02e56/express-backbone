@@ -1,0 +1,13 @@
+extends layout
+	
+block content
+	h1= title
+	p Welcome to #{title}
+	section#notes
+	script(id='note', type='text/html').
+		<li><%= title %></li>
+		<li><%= description %></li>
+	script(id='noteDetail', type='text/html').
+		<h2><%= title %></h2>
+		<p><%= description %></p>
+	script(data-main='javascripts/init', src='javascripts/bower_components/requirejs/require.js')  

@@ -1,0 +1,7 @@
+public/javascripts/bower_components
+node_modules
+database
+coverage
+routes
+.idea
+*.log
